@@ -1,0 +1,14 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actor Results</title>
+</head>
+<body>
+    <h1>Actor Results</h1>
+    <h2>Actor Name: {{ actor_name }}</h2>
+    <div>{{ films_per_category | safe }}</div>
+    <img src="{% static 'result.png' %}" alt="Films per Category Graph">
+</body>
+</html>

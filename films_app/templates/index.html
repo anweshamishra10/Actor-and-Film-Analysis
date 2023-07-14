@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actor Information</title>
+</head>
+<body>
+    <h1>Actor Information</h1>
+    <form method="post" action="{% url 'actor_info' %}">
+        {% csrf_token %}
+        <label for="actor_id">Actor ID:</label>
+        <input type="text" name="actor_id" id="actor_id">
+        <button type="submit">Analyze Films</button>
+    </form>
+</body>
+</html>
